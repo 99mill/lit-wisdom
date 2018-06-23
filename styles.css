@@ -76,6 +76,7 @@ img.logo {
     bottom: 40px;
     right: 40px;
     font-weight: normal;
+    /* margin: 0 20px; */
 }
 
 .generate {
@@ -126,4 +127,73 @@ img.logo {
     transform: rotate(-24deg);
     z-index: -1;
     position: fixed;
+}
+
+/* ====== MEDIA QUERIES ===== */
+
+@media screen and (max-width: 667px) {
+
+    .title {
+        position: fixed;
+        top: 20px;
+        left: 40px;
+    }
+    
+    img.logo {
+        max-height: 25px;
+        margin-right: 7px;
+        margin-top: -1px;
+    }
+    
+    .title h1 {
+        font-size: 25px;
+        opacity: .5;
+        float: right;
+        font-weight: normal;
+    }
+
+    .content h3 {
+        display: none;
+    }
+
+    .quote-card {
+        height: 450px;
+        width: 300px;
+        margin-top: 20px;
+        padding: 30px;
+        box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.3);
+    }
+
+    .marks {
+        left: 40px;
+    }
+
+    .quote {
+        font-size: 28px;
+    }
+
+    .author {
+        font-size: 16px;
+        bottom: 20px;
+        right: 20px;
+        margin-left: 30px;
+    }
+
+    .generate {
+        margin-top: 30px;
+        font-size: 18px;
+        float: right;
+        opacity: .8
+    }
+
+    .social {
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+    }
+    
+    .social a i {
+        font-size: 24px;
+        margin-left: 10px;
+    }    
 }
