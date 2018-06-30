@@ -131,13 +131,13 @@ img.logo {
 
 /* ====== MEDIA QUERIES ===== */
 
-@media screen and (max-height: 736px) {
+/* @media screen and (max-height: 736px) {
 
     .content h3 {
         display: none;
     }
 
-}
+} */
 
 @media screen and (max-width: 736px) {
 
