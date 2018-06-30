@@ -139,6 +139,7 @@ img.logo {
 
 } */
 
+/* 
 @media screen and (max-width: 736px) {
 
     .title {
@@ -160,7 +161,7 @@ img.logo {
         bottom: calc( (100vh - 500px) / 5 );
         right: calc( (100% - 350px) / 2 );
     }
-}
+} */
 
 @media screen and (max-width: 667px) {
 
@@ -190,6 +191,9 @@ img.logo {
     }
 
     .quote-card {
+        position: fixed;
+        top: calc( (100vh - 450px) / 2 );
+        left: calc( (100% - 300px) / 2 );
         height: 450px;
         width: 300px;
         /* margin-top: 20px; */
@@ -237,6 +241,7 @@ img.logo {
     }
 }
 
+
 @media screen and (max-width: 320px) {
 
     .title {
@@ -258,4 +263,3 @@ img.logo {
         right: calc( (100% - 250px) / 2 );
     }
 }
-
