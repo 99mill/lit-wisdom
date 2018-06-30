@@ -131,12 +131,45 @@ img.logo {
 
 /* ====== MEDIA QUERIES ===== */
 
+@media screen and (max-height: 736px) {
+
+    .content h3 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    .title {
+        top: calc( (100vh - 500px) / 5 );
+        left: calc( (100% - 350px) / 2 );
+    }
+
+    .quote-card {
+        height: 500px;
+        width: 350px;
+        padding: 40px;
+    }
+
+    .quote {
+        font-size: 30px;
+    }
+
+    .generate {
+        bottom: calc( (100vh - 500px) / 5 );
+        right: calc( (100% - 350px) / 2 );
+    }
+}
+
 @media screen and (max-width: 667px) {
 
     .title {
         position: fixed;
-        top: 20px;
-        left: 40px;
+        /* top: 30px;
+        left: 40px; */
+        top: calc( (100vh - 450px) / 5 );
+        left: calc( (100% - 300px) / 2 );
     }
     
     img.logo {
@@ -159,7 +192,7 @@ img.logo {
     .quote-card {
         height: 450px;
         width: 300px;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         padding: 30px;
         box-shadow: -4px 4px 10px 0px rgba(0,0,0,0.3);
     }
@@ -180,20 +213,49 @@ img.logo {
     }
 
     .generate {
-        margin-top: 30px;
         font-size: 18px;
-        float: right;
-        opacity: .8
+        opacity: .8;
+        position: fixed;
+        /* bottom: 40px; */
+        /* right: 40px; */
+        bottom: calc( (100vh - 450px) / 5 );
+        right: calc( (100% - 300px) / 2 );
     }
 
     .social {
-        position: fixed;
-        bottom: 20px;
-        right: 40px;
+        display: none;
+
     }
     
     .social a i {
         font-size: 24px;
         margin-left: 10px;
     }    
+
+    .stripe {
+        transform: rotate(-18deg);
+    }
 }
+
+@media screen and (max-width: 320px) {
+
+    .title {
+        top: calc( (100vh - 400px) / 5 );
+        left: calc( (100% - 250px) / 2 );
+    }
+
+    .quote-card {
+        height: 400px;
+        width: 250px;
+    }
+
+    .quote {
+        font-size: 26px;
+    }
+
+    .generate {
+        bottom: calc( (100vh - 400px) / 5 );
+        right: calc( (100% - 250px) / 2 );
+    }
+}
+
